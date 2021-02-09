@@ -1,0 +1,9 @@
+{
+  "clientes": [
+    {
+      "id": 1,
+      "nome": "João da Silva",
+      "dataCadastro": "2021-02-08"
+    }
+  ]
+}
