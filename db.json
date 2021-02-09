@@ -1,9 +1,14 @@
 {
   "clientes": [
     {
+      "nome": "João da Silva 3",
+      "sexo": "Masculino",
+      "id": 1
+    },
+    {
       "id": 1,
-      "nome": "João da Silva",
-      "dataCadastro": "2021-02-08"
+      "nome": "Maria da Silva",
+      "sexo": "Feminino"
     }
   ]
 }
