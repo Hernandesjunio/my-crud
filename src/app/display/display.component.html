@@ -1,0 +1,28 @@
+<mat-card *ngIf="cliente">
+  <Fieldset *ngIf="!isEditing">
+    <legend>Cliente</legend>
+    <section fxFlex="column">
+      <div fxFlex>
+        <label>Nome:</label>
+        <span>{{ cliente.nome }}</span>
+      </div>
+      <div fxFlex>
+        <label>Sexo:</label>
+        <span>{{ cliente.sexo }}</span>
+      </div>
+    </section>
+    <button mat-raised-button color="secondary" (click)="delete.emit(cliente.id)">
+      Excluir
+    </button> &nbsp;
+    <button mat-raised-button color="primary" (click)="isEditing = !isEditing">
+      Editar
+    </button>
+  </Fieldset>
+
+  <app-form
+    *ngIf="isEditing"
+    [cliente]="cliente"
+    (save)="gravar($event)"
+    (back)="isEditing = false"
+  ></app-form>
+</mat-card>
